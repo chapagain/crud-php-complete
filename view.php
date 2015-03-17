@@ -27,7 +27,7 @@ $result = mysql_query("SELECT * FROM products WHERE login_id=".$_SESSION['id']."
 		<tr bgcolor='#CCCCCC'>
 			<td>Name</td>
 			<td>Quantity</td>
-			<td>Price</td>
+			<td>Price (euro)</td>
 			<td>Update</td>
 		</tr>
 		<?php
