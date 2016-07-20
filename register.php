@@ -19,7 +19,7 @@ if(isset($_POST['submit'])) {
 		echo "<br/>";
 		echo "<a href='register.php'>Go back</a>";
 	} else {
-		mysql_query("INSERT INTO login(name, email, username, password) VALUES('$name', '$email', '$user', md5('$pass'))", $conn)
+		mysqli_query($mysqli, "INSERT INTO login(name, email, username, password) VALUES('$name', '$email', '$user', md5('$pass'))")
 			or die("Could not execute the insert query.");
 			
 		echo "Registration successfully";

@@ -12,7 +12,7 @@
 	<?php
 	if(isset($_SESSION['valid'])) {			
 		include("connection.php");					
-		$result = mysql_query("SELECT * FROM login", $conn);
+		$result = mysqli_query($mysqli, "SELECT * FROM login");
 	?>
 				
 		Welcome <?php echo $_SESSION['name'] ?> ! <a href='logout.php'>Logout</a><br/>
